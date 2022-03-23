@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Taxilla]">
+  <test name="Test.pos(failed)">
+    <parameter name="action" value="withpartition"/>
+    <classes>
+      <class name="com.testcases.Partnermanagment">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="test"/>
+          <include name="quit"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.testcases.Partnermanagment -->
+    </classes>
+  </test> <!-- Test.pos(failed) -->
+</suite> <!-- Failed suite [Taxilla] -->

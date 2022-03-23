@@ -1,0 +1,32 @@
+{
+"suitename":"InboundwithoutPartitions Suite",
+"testcases":[
+{
+"name":"Create Inbound",
+"parameternames":["action","browser"],
+"executions":[
+{
+"runmode":"Y",
+"executionname":"Create New Inbound",
+"dataflag":"InboundwithoutPartitions",
+"parametervalues":["createport","chrome"],
+"methods":["testinbound"]
+}
+]
+},
+{
+"name":"Create Inbound1",
+"parameternames":["action"],
+"executions":[
+{
+"runmode":"Y",
+"executionname":"Create new Inbound1",
+"dataflag":"InboundwithoutPartitionsneg",
+"parametervalues":["withpartition"],
+"methods":["testinbound","test2"]
+}
+]
+}
+
+]
+}  

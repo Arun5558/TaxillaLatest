@@ -1,0 +1,31 @@
+{
+"browsers":["Chrome","Mozilla"],
+"parallelsuites":"1",
+"testsuites":[
+{
+"runmode":"Y",
+"name":"InboundwithoutPartitions Suite",
+"testdatajsonfile":"data//InboundwithoutPartitiondata.json",
+"testdataxlsfile":"xls_data//Data.xlsx",
+"suitefilename":"suites//InboundwithoutPartitionsutie.json",
+"paralleltests":"N"
+},
+{
+"runmode":"N",
+"name":"Partner Suite",
+"testdatajsonfile":"data//partnermanagmentdata.json",
+"testdataxlsfile":"xls_data//Data.xlsx",
+"suitefilename":"suites//partnersutie.json",
+"paralleltests":"N"
+},
+{
+"runmode":"N",
+"name":"TenantBasedPartition Suite",
+"testdatajsonfile":"data//TenantBasedPartitiondate.json",
+"testdataxlsfile":"xls_data//Data.xlsx",
+"suitefilename":"suites//TenantBasedPartitionsutie.json",
+"paralleltests":"N"
+}
+]
+
+} 

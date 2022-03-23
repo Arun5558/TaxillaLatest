@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Taxilla">
+<listeners>
+<listener class-name="com.listener.MyTestNGListener"></listener>
+</listeners>
+  <test name="Test.pos">
+  <parameter name="action" value="withpartition"/>
+    <classes>
+      <class name="com.testcases.InboundwithoutPartitions">
+      <methods>
+      <include name ="test" />
+      <include name ="test1" />
+      <include name ="test2" />
+      </methods>
+      </class>
+ 
+      <class name="com.hybrid.testcases.TenantBasedPartition">
+      <methods>
+      <include name ="VerifyAppDis" />
+      </methods>
+       </class>
+      <class name="com.hybrid.testcases.Partnermanagment"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  <test name="Test.neg">
+  <parameter name="action" value="withoutpartition"/>
+    <classes>
+      <class name="com.hybrid.testcases.InboundwithoutPartitions">
+      
+      <methods>
+      <include name ="test" />
+    <include name ="test1" />
+      <include name ="test2" />
+      </methods>
+      </class>
+ 
+      <class name="com.hybrid.testcases.TenantBasedPartition">
+      <methods>
+      <include name ="VerifyAppDis" />
+      </methods>
+       </class>
+      <class name="com.hybrid.testcases.Partnermanagment"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

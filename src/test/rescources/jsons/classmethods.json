@@ -1,0 +1,16 @@
+{
+"classdetails":[
+{
+"class":"com.testcases.InboundwithoutPartitions",
+"methods":["testinbound","test1","test2"]
+},
+{
+"class":"com.testcases.PartnerManagment",
+"methods":["testP"]
+},
+{
+"class":"com.testcases.TenantBasedPartition",
+"methods":["VerifyAppDis","urlNav"]
+}
+]
+}  

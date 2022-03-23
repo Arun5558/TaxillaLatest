@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [InboundwithoutPartitions Suite]">
+  <test name="Create Inbound-Create New Inbound-It.1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="datafilpath" value="/home/arnandigam/workspace/taxilla//src//test//rescources//jsons//data//InboundwithoutPartitiondata.json"/>
+    <parameter name="action" value="createport"/>
+    <parameter name="iteration" value="0"/>
+    <parameter name="suitename" value="InboundwithoutPartitions Suite"/>
+    <parameter name="dataflag" value="InboundwithoutPartitions"/>
+    <classes>
+      <class name="com.testcases.InboundwithoutPartitions">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="quit"/>
+          <include name="beforeTest"/>
+          <include name="testinbound"/>
+        </methods>
+      </class> <!-- com.testcases.InboundwithoutPartitions -->
+    </classes>
+  </test> <!-- Create Inbound-Create New Inbound-It.1(failed) -->
+  <test name="Create Inbound1-Create new Inbound1-It.1(failed)">
+    <parameter name="datafilpath" value="/home/arnandigam/workspace/taxilla//src//test//rescources//jsons//data//InboundwithoutPartitiondata.json"/>
+    <parameter name="action" value="withpartition"/>
+    <parameter name="iteration" value="0"/>
+    <parameter name="suitename" value="InboundwithoutPartitions Suite"/>
+    <parameter name="dataflag" value="InboundwithoutPartitionsneg"/>
+    <classes>
+      <class name="com.testcases.InboundwithoutPartitions">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="test2"/>
+          <include name="quit"/>
+          <include name="beforeTest"/>
+          <include name="testinbound"/>
+        </methods>
+      </class> <!-- com.testcases.InboundwithoutPartitions -->
+    </classes>
+  </test> <!-- Create Inbound1-Create new Inbound1-It.1(failed) -->
+</suite> <!-- Failed suite [InboundwithoutPartitions Suite] -->
